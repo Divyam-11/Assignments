@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.nc": "gcode",
+        "iostream": "cpp",
+        "ostream": "cpp"
+    }
+}
