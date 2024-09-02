@@ -26,10 +26,18 @@ public:
 
 class Library
 {
-    Book Lib[10];
+    Book *Lib;
     int size = 0;
 
 public:
+    Library()
+    {
+        Lib = new Book[10];
+    }
+    ~Library()
+    {
+        delete[] Lib;
+    }
     bool addNewBook(string &title, string &author, int &ISBN)
     {
         if (size >= 10)
